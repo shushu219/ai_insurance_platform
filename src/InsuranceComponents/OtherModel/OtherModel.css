@@ -1,0 +1,106 @@
+#root {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* 背景 */
+body {
+  background-color: #f7fafc; 
+  font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+  margin: 0;
+  padding: 0;
+  /*
+  'Noto Sans TC'：優先使用這個字型（「Noto Sans 繁體中文」）
+  'Microsoft JhengHei'：如果前面字型沒有，接著用這個（微軟正黑體）
+  sans-serif：如果前面兩個字型都沒有，就用瀏覽器預設的無襯線字體（如 Arial, Helvetica）
+  */
+}
+
+/* 標題 */
+.header {
+  padding: 0rem;
+  text-align: center;
+}
+
+/* 主標題 */
+.title {
+  font-size: 2.1875rem;   /* 標題字體大小 */
+  font-weight: 700;       /* 粗體 */
+  line-height: 2.5rem;    /* 行高 */
+  color: #2d3748;       /* 深灰色，接近黑但沒那麼黑 */
+  margin: 0;
+}
+
+/* 輸入框 */
+.textbox {
+  background-color: white;                    /* 白色底 */
+  width: 15.625rem;                             /* 寬度 */
+  height: 2.5rem;                               /* 高度 */
+  border-radius: 0.625rem;                      /* 圓角 */
+  border: 1px solid #ccc;                     /* 邊框顏色和大小 */
+  padding: 0 0.75rem;                           /* 左右內距，文字不貼邊 */
+  font-size: 1rem;                              /* 文字大小 */
+  justify-content: flex-start;                  /* 靠左對齊 */
+  box-sizing: border-box;                       /* 寬高包含padding和border */
+  margin: 0 0.3125rem 0.75rem 0.3125rem;        /* 輸入框間距 */
+}
+
+/* 模型準確度輸入框 */
+.accuracy-input {
+  width: 9.375rem;
+}
+
+/* 按鈕 */
+.buttontype {
+  color: #f7fafc;
+  font-size: 1rem;
+  background-color: #2d3748;
+  width: 5.625rem;                              /* 寬度 */
+  height: 2.5rem;                               /* 高度 */
+  border-radius: 0.625rem;                      /* 圓角 */
+  box-sizing: border-box;                       /* 寬高包含padding和border */
+  margin: 0 0.3125rem 0.75rem 0.3125rem;        /* 輸入框間距 */
+}
+
+/* 查詢結果外框 */
+.modellist-box {
+  background-color: white;
+  border-radius: 0.625rem;
+  width: 90%;
+  margin: 0 auto;                                  /* 水平置中 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);      /* 陰影可選 */
+  padding: 1rem; /* 內距 */
+}
+
+/* 查詢結果按鈕 */
+.app-button {
+  font-size: 0.9375rem;
+  background-color: white;
+  border: white;
+  border-radius: 0.625rem;
+  display: flex;                 /* 使用 Flex 排版 */
+  flex-direction: column;        /* 垂直排列 */
+  align-items: center;           /* 垂直置中 */
+  justify-content: center;       /* 水平置中 */
+  gap: 0.625rem;
+  line-height: 0.3125rem;
+  height: 6.25rem;
+  width: 97%;
+  padding: 0.625rem;
+  margin: 0 auto;
+}
+
+/* 按鈕副標 */
+.app-button-sub {
+  color: gray;
+  display: flex;                   /* 水平排列 */
+  justify-content: space-between;  /* 左右兩端對齊 */
+  gap: 1.25rem;                    /* 間距 */
+}
+
+/* 滑鼠移到按鈕上時 */
+.app-button:hover {
+  background-color: #f1f5f9;
+}

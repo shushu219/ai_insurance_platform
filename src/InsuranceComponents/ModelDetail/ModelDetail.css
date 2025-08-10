@@ -1,0 +1,74 @@
+/* 背景 */
+body {
+  background-color: #f7fafc; 
+  font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+  padding: 0;
+}
+
+/* 標題 */
+.header {
+  padding: 0rem;
+  text-align: left;
+  margin-left: 1.5%;
+}
+
+/* 主標題 */
+.title {
+  font-size: 2rem;      /* 標題字體大小 */
+  font-weight: 700;     /* 粗體 */
+  line-height: 2.5rem;  /* 行高 */
+  color: #2d3748;     /* 深灰色，接近黑但沒那麼黑 */
+  margin: 0;
+}
+
+/* 副標題 */
+.subtitle {
+  font-size: 1.0625rem;
+  color: gray;
+  margin: 0;
+  margin-top: 0.3125rem;
+}
+
+/* 內容外框 */
+.content-box {
+  background-color: white;
+  border-radius: 0.625rem;
+  width: 95%;
+  margin: 0 auto;                                      /* 水平置中 */
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.05);      /* 陰影可選 */
+  padding: 1rem;                                       /* 內距 */
+  display: flex;                                       /* 水平排列 */
+  align-items: center;                                 /* 垂直置中 */
+  gap: 1.25rem;                                        /* 間距 */
+}
+
+/* 內容標題 */
+.content-title {
+  font-size: 1.125rem;
+  background-color: white;
+  width: 15%;
+  margin: 0.3125rem;
+  font-weight: bold;
+}
+
+/* 內容 */
+.content-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;                /* 水平靠左 */
+  justify-content: center;                /* 垂直置中 */
+  gap: 0.625rem;                          /* 間距 */
+  border-left: 0.125rem solid #e0e0e0;  /* 垂直分隔線 */
+  padding-left: 5%;
+}
+
+/* 按鈕 */
+.buttontype {
+  color: #f7fafc;
+  font-size: 1rem;
+  background-color: #2d3748;
+  width: 7.5rem;              /* 寬度 */
+  height: 2.5rem;             /* 高度 */
+  border-radius: 0.625rem;    /* 圓角 */
+  box-sizing: border-box;     /* 寬高包含padding和border */
+}
